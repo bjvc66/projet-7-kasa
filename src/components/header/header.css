@@ -1,0 +1,17 @@
+ .ContHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   width:1240px ;
+   height: 68px;
+   margin-top: 40px;
+ 
+ }
+ .HomeLogo{
+    margin-left: 50px;
+ }
+
+ .TwoLink{
+    margin-left:30px ;
+    text-decoration: none;
+ }

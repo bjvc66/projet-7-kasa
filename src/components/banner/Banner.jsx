@@ -1,14 +1,13 @@
 import React from "react";
+import './banner.css';
 
-
-function Banner({ image, texte }) {
-  return (
-    <div className="banner">
-      <img className="banner__img" src={image} alt="Bannière" />
-      <div className="banner__sombre"></div>
-      <span className="banner__txt">{texte}</span>
-    </div>
-  );
+function Banner(props) {
+    return (
+        <div className="banner">
+            <h1 className='banner_title'>{props.title}</h1>
+            <img src={props.src} alt='Bannière Kasa' className='banner_img' />
+        </div>
+    )
 }
 
 export default Banner;
