@@ -1,0 +1,54 @@
+@import "../../utils/mixins.scss";
+.banner {
+   padding: 33px;
+   
+    position: relative;
+    
+  &__txt {
+      position: absolute;
+      top: 40%;
+      left: 33%;
+      font-size: 33px;
+      color: white;
+      
+      
+    }
+}
+img{
+  width:98%;
+  margin-left:15px ;
+}
+@include mediamaxwidth (780px){
+  .banner {
+    padding: 25px;
+    
+     position: relative;
+     
+   &__txt {
+       position: absolute;
+       top: 40%;
+       left: 23%;
+       font-size: 25px;
+       color: white;
+       
+       
+     }
+ }
+}
+ @include mediamaxwidth (400px){
+  .banner {
+    padding: 15px;
+    
+     position: relative;
+     
+   &__txt {
+       position: absolute;
+       top: 40%;
+       left: 23%;
+       font-size: 15px;
+       color: white;
+       
+       
+     }
+ }
+}

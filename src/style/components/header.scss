@@ -1,0 +1,30 @@
+ @import "../../utils/mixins.scss";
+ .ContHeader{
+    @include flex-between;
+   height: 80px;
+   margin-top: 35px;
+   margin-bottom: 40px;
+ }
+ .HomeLogo{
+    margin-left: 35px;
+    width:160px;
+    height:50px;
+ }
+
+ .TwoLink{
+    margin-left:25px ;
+    text-decoration: none;
+ }
+.navigation{
+margin-right: 45px;
+
+}
+@include mediamaxwidth(400px){
+   .ContHeader{
+      gap:30px;
+   }
+   .TwoLink{
+      margin-left:5px ;
+      
+   }
+}
