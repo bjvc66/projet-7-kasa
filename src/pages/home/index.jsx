@@ -1,10 +1,10 @@
 import React from 'react';
-import Footer from "../../components/footer/index.jsx";
-import Header from "../../components/header/index.jsx";
-import Banner from '../../components/banner/index.jsx';
-import Gallery from '../../components/Gallery/index.jsx'
+import Footer from "../../layout/footer.jsx";
+import Header from "../../layout/header.jsx";
+import Banner from '../../components/banner.jsx';
+import Gallery from '../../components/gallery.jsx';
 import BannerImage from '../../assets/images/BannerImage.png';
-
+import '../../style/components/homePage.scss';
 function Home()  {
     return (
       <div className="home">

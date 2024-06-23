@@ -14,10 +14,7 @@
       
     }
 }
-img{
-  width:98%;
-  margin-left:15px ;
-}
+
 @include mediamaxwidth (780px){
   .banner {
     padding: 25px;

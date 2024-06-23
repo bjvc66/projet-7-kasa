@@ -1,21 +1,22 @@
 import React from 'react';
-import Footer from "../../components/footer/index.jsx";
-import Header from "../../components/header/index.jsx";
-import FicheLogement from "../../components/ficheLogement/index.jsx";
+import Footer from "../../layout/footer.jsx";
+import Header from "../../layout/header.jsx";
+import '../../style/components/AppartmentPage.scss';
+import AppartmentPage from "../../components/appartmentPage.jsx"
 
 
+    
 function Logement()  {
-    return (
-      <div className="logement">
-        <Header/>
-        <main>
-          
-          <FicheLogement/>
+  return (
+    <div className="logement">
+      <Header/>
+      <main>
+       <AppartmentPage/> 
       
-        </main>
-        <Footer/>
-      </div>
-    )
-  }
-  
+      </main>
+      <Footer/>
+    </div>
+  )
+}
+
 export default Logement

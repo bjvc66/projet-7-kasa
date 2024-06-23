@@ -1,6 +1,6 @@
 @import "../../style/color.scss";
 @import "../../utils/mixins.scss";
-.home-gallery {
+.home_gallery {
     
     @include  mediaminwidth(768px) {
       display: grid;
@@ -25,3 +25,11 @@
       column-gap: 60px;
     }
   }
+  .card_title{
+    color:$tertiary;
+  }
+ 
+  .card_img{
+    background: linear-gradient(#FFFFFF,#000000);
+  }
+ 

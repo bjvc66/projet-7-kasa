@@ -1,0 +1,12 @@
+import React from 'react';
+import '../../style/components/tag.scss';
+
+function Tag({ nom }) {
+  return (
+    <div className="tag-container">
+      
+    </div>
+  );
+}
+
+export default Tag;

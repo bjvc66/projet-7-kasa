@@ -11,8 +11,15 @@
     justify-content: center;
     align-items: center;
   }
+
   
- 
+  @mixin flex-rowBetween {
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
  
  
    
@@ -22,6 +29,10 @@
     align-items: center;
     justify-content: flex-end;
   }
+ 
+
+
+
   @mixin flex-between{
     display: flex;
     align-items: center;

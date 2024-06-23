@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../style/components/Card_gallery.scss';
+import './../style/components/Card_gallery.scss';
 
 function Card({image, title}) {
     return (
