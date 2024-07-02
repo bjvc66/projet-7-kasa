@@ -1,0 +1,62 @@
+@import '../../style/color.scss';
+@import '../../utils/mixins.scss';
+
+.info{
+ @include flex-between;
+}
+
+ .collapse{
+  width:100%;
+ 
+ }
+  .collapse_title{
+   padding-bottom: 20%;
+   width: 80%;
+    height:50px;
+    color:$tertiary;
+    background-color:$quatriary ;
+    margin-top: 20px;
+    border-radius: 10px;
+   @include flex-between;
+   position: relative;
+   margin-left: 8%;
+   padding:5px;
+   top:10px;
+  }
+  .collapse_about{
+   
+    width: 100%;
+     height:50px;
+     color:$tertiary;
+     background-color:$quatriary ;
+     margin-top: 20px;
+    @include flex-between;
+    position: relative;
+    top:10px;
+   }
+
+  .collapse_chevron{
+    padding-right: 15px;
+  }
+
+  .collapse_content{
+   width: 80%;
+    height: 150px;
+    background-color:$primary;
+    margin-left: 8%;
+   
+    }
+.text{
+  padding:10px;
+ text-align: center;
+ 
+}
+.text_description{
+  margin-top: 10px;
+}
+.Alexandre_Dumas{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}   
+   

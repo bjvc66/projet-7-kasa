@@ -20,7 +20,11 @@
     align-items: center;
     width: 100%;
   }
- 
+  @mixin flex-start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
  
    
   

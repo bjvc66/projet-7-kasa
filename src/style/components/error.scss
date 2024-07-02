@@ -1,0 +1,64 @@
+@import '../../utils/mixins.scss';
+.ErrorText{
+color: #FF6060;
+text-align: center;
+margin-bottom: 100Px;
+}
+
+.ErrorTitle{
+    color:#FF6060;
+   
+    font-size:1800%;
+    font-family:sans-serif;
+    @include flex-center;
+   
+
+}
+.retourner{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+    color:#ff6060;
+}
+
+a{
+    color:#FF6060;
+}
+
+@include  mediamaxwidth(768px) {
+    
+
+.ErrorTitle
+   {
+    font-size:800%;
+    font-family:sans-serif;
+    @include flex-center;
+    margin-top:100px ;
+    margin-bottom: 100px;
+    
+    }
+   .ErrorText{
+    margin-bottom: 200px;
+   }
+}
+
+@include  mediamaxwidth(580px) {
+  .navigation{
+    margin-right: 5px;
+    
+    }
+
+    .ErrorText{
+ 
+  text-align:center;
+  font-size:x-large;
+}
+
+.ErrorTitle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+}
