@@ -4,12 +4,24 @@
     background-color: aqua;
 }
 .image{
+ 
+ 
    margin-left: 50px;
     height: 400px; 
     object-fit:cover;
     border-radius: 1rem;
   }
  .image_carousel{
+  position:relative ;
+  .button{
+    position: absolute;
+   top:0;
+   bottom: 0;
+  
+cursor: pointer;
+   height:60px;
+   }
+ 
 margin-bottom: 2rem;
 position: relative;
 height:20rem;
@@ -19,7 +31,7 @@ img{
   width:100%; 
 position: absolute;
 height: 100%;
-inset: 0;
+
   object-fit: cover;
   border-radius: 1rem;
   opacity:0;
@@ -28,3 +40,9 @@ inset: 0;
   }
 }
  }
+
+ 
+   
+   
+   
+   

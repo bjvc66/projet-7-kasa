@@ -9,22 +9,30 @@ function Carrousel({pictures}) {
   return "";
  }
   const movetonext=()=>{
-    setindexPicture((indexpicture + 1)% pictures.lenght)
+   
+    setindexPicture(indexpicture === pictures.lenght - 1 ? 0: indexpicture + 1)
   }
- 
+  const movetoprevious=()=>{
+    
+      setindexPicture(indexpicture === 0 ? pictures.length - 1 : indexpicture - 1); // on repart au dernier slide quand on est au premier
+    };
+  
+   
 //<img className="left" src={LeftArrow}/>
   return (
+   <div className="image_container">
+    <button className='next'onClick={movetonext}>next</button>
+    <button className='previous'onClick={movetoprevious}>previous</button>
     
   <div className="image_carousel">
-<button onClick={movetonext}>next</button>
-<button>previous</button>
+
 {pictures.map((picture,i)=>(
 
  <img key= {picture} alt="" className={getClassName(i)} src={picture} />
  
 
 ))}
-
+</div> 
   </div>
     
   );

@@ -40,12 +40,7 @@ function AppartmentPage() {
           <div className='info'>
               <Collapse title="Description">
                   <div className='text_description'>
-                   Vous serez a 50m du canal saint-martin ou vous pourrez
-                   pique-niquer l'été a coté de nombreux bars et restaurants
-                   Au coeur de Paris avec 5 lignes de metro et de nombreux
-                   bus.Logement parfait pour les voyageurs en solo et les
-                   voyageurs d'affaires.Vous etes a la station de la gare de 
-                   l'est 7minutes a pied. 
+                  
                     
                     </div>
               </Collapse>

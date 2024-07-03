@@ -4,8 +4,9 @@ import emptyStar from "./../assets/images/startRempli.png";
 import fullStar from "./../assets/images/startVide.png";
 import './../style/components/star.scss';
 
-function Star(props) {
-  const score=props.score;
+function Star(rate) {
+  const score=rate.score;
+  
   const notes = [1, 2, 3, 4, 5];
   return (
     <div className="star-contenair">
