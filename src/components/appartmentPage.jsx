@@ -11,8 +11,8 @@ import Host from './../components/host.jsx';
 function AppartmentPage() {
     const { id } = useParams();
     const Logement= Data.find((logement) => logement.id === id);
-     /* Tags */
-  const tagsLogement = Logement ?.tags.map((tags, i) => {
+      /* Tags */
+  const tagsLogement = Logement?.tags.map((tags, i) => {
     return <Tag key={i} nom={tags} />;
   });
 
@@ -21,23 +21,36 @@ function AppartmentPage() {
       <Carrousel pictures={Logement.pictures}/> 
       <div className='appartment-header'>
           <div className='appartment-title'>
-                <h1>{Logement.title}</h1>
 
+                <h1>{Logement.title}</h1>
                 <h2>{Logement.location}</h2> 
-                <Tag/>
-                <div className="description-info__titletags__tags">
+                
+               
+                 {/* Tags */}
+                 <div className="description-info__titletags__tags">
                   {tagsLogement}
                 </div>
+                
           </div>
           <div className='appartment_owner'>
             <div className="Dumas">
              <div className="Alexandre_Dumas" >
                 <h3><p>Alexandre</p><p>Dumas</p> </h3>
               
-               <Host/>
-               </div>   
+{/* Host */}
+<div className="nom-proprio">
+<Host
+  name={Logement?.host.name}
+  picture={Logement?.host.picture}
+/>
+</div>
+  </div> 
+  {/* Star */}
+  <div className="description-info__proprietaire__rate">
+                  <Star score={Logement.rating} />
+                </div>  
                
-                <Star/>
+               
                 </div>
       </div>
      

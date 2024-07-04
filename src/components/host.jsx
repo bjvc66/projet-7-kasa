@@ -1,16 +1,17 @@
 import React from 'react';
+import './../style/components/host.scss';
 
 function Host(props) {
-    return (
-      <div className='badge'>
-        <span className="nom">{props.name}</span>
-        <img
-          className="photo"
-          src={props.picture}
-          alt="Propriétaire"
-        />
-      </div>
-    );
+  return (
+    <>
+      <span className="nom-proprietaire">{props.name}</span>
+      <img
+        className="photo-proprietaire"
+        src={props.picture}
+        alt="Propriétaire"
+      />
+    </>
+  );
 }
 
 export default Host;
