@@ -13,13 +13,13 @@
   }
  .image_carousel{
   position:relative ;
-  .button{
-    position: absolute;
+  .button.next{
    top:0;
    bottom: 0;
-  
-cursor: pointer;
-   height:60px;
+   width:3rem;
+   
+    position: absolute;
+    cursor: pointer;
    }
  
 margin-bottom: 2rem;
@@ -31,8 +31,7 @@ img{
   width:100%; 
 position: absolute;
 height: 100%;
-
-  object-fit: cover;
+object-fit: cover;
   border-radius: 1rem;
   opacity:0;
   &.show {
@@ -40,7 +39,25 @@ height: 100%;
   }
 }
  }
+.carrousel{
+position :relative;
+.arrowLeft,.arrowRight{
+  position:absolute;
+  top:calc((50% - 400px/2));
+  cursor: pointer;
 
+}
+.arrowLeft{
+  left:10px;
+  background-color: aqua;
+ 
+}
+.arrowRight{
+  right:10px;
+background-color: aqua;
+}
+
+}
  
    
    

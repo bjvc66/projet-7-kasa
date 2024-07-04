@@ -1,37 +1,53 @@
 import React, { useState } from "react";
 import './../style/components/carrousel.scss';
-import LeftArrow from'./../assets/images/ArrowLeft.png';
-import RightArrow from'./../assets/images/ArrowRight.png';
+import leftArrow from'./../assets/images/ArrowLeft.png';
+import rightArrow from'./../assets/images/ArrowRight.png';
 function Carrousel({pictures}) {
-  const [indexpicture, setindexPicture] = useState(0); 
+  
+  let [index, setindex] = useState(0);
+  let currentPicture=[index] 
+
+
  const getClassName=(i)=>{
-  if(i === indexpicture) return 'show';
+  if(i === index) return 'show';
   return "";
  }
-  const movetonext=()=>{
-   
-    setindexPicture(indexpicture === pictures.lenght - 1 ? 0: indexpicture + 1)
-  }
-  const movetoprevious=()=>{
+
+  const movetonext = () => {
+    const newIndex = index + 1;
+    setindex(newIndex >= pictures.length ? 0 : newIndex);
+  };
+
+  
     
-      setindexPicture(indexpicture === 0 ? pictures.length - 1 : indexpicture - 1); // on repart au dernier slide quand on est au premier
+    const movetoprevious = () => {
+      const newIndex = index - 1;
+     setindex(newIndex < 0 ? pictures.length - 1 : newIndex);
     };
   
-   
-//<img className="left" src={LeftArrow}/>
-  return (
-   <div className="image_container">
-    <button className='next'onClick={movetonext}>next</button>
-    <button className='previous'onClick={movetoprevious}>previous</button>
+return (
+
+   <div className="carrousel">
+
+    <div className='arrowRight'onClick={movetonext}>
+     <img src= {rightArrow} alt=""/>
+      </div>
+      <div className="picture">
+
+        <img src={currentPicture} alt=""/>
+      </div>
+    <div className='arrowLeft'onClick={movetoprevious}>
+      <img src ={ leftArrow} alt=""/>
+      </div>
     
   <div className="image_carousel">
 
 {pictures.map((picture,i)=>(
+<img key= {picture} alt="" className={getClassName(i)} src={picture} />
+ ))
+ }
 
- <img key= {picture} alt="" className={getClassName(i)} src={picture} />
- 
 
-))}
 </div> 
   </div>
     
@@ -40,3 +56,10 @@ function Carrousel({pictures}) {
 
 export default Carrousel;
 
+
+ 
+ 
+  
+  
+  
+  

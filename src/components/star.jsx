@@ -1,39 +1,37 @@
 
 import React from 'react';
-import emptyStar from "./../assets/images/startRempli.png";
-import fullStar from "./../assets/images/startVide.png";
+import orangeStar from "./../assets/images/startRempli.png";
+import greyStar from "./../assets/images/startVide.png";
 import './../style/components/star.scss';
 
-function Star(rate) {
-  const score=rate.score;
-  
-  const notes = [1, 2, 3, 4, 5];
-  return (
-    <div className="star-contenair">
-     {notes.map((note) =>
-       score >= note ? (
-        <img key={note.toString()} className="etoile" src={emptyStar} alt="star"/>
-      ) : (
-        <img key={note.toString()} className="etoile" src={fullStar} alt="star"/>
-      )
 
-    )}
+
+
+
+//Component
+function Rating({ rating }) {
+  const range = [1, 2, 3, 4, 5]
+  return (
+    <div className="rating-container">
+      {range.map((rangeElem) =>
+        rating >= rangeElem ? (
+          <img
+            className="rating-container__stars"
+            src={orangeStar}
+            alt=""
+            key={rangeElem.toString()}
+          />
+        ) : (
+          <img
+            className="rating-container__stars"
+            src={greyStar}
+            alt=""
+            key={rangeElem.toString()}
+          />
+        )
+      )}
     </div>
-  );
+  )
 }
 
-export default Star;
-
-
-
-
-
-   
-   
-     
-       
-        
-        
-         
-    
-
+export default Rating

@@ -11,7 +11,10 @@ import Host from './../components/host.jsx';
 function AppartmentPage() {
     const { id } = useParams();
     const Logement= Data.find((logement) => logement.id === id);
-    console.log(id)
+     /* Tags */
+  const tagsLogement = Logement ?.tags.map((tags, i) => {
+    return <Tag key={i} nom={tags} />;
+  });
 
  return (
 <div className='appartmentPage'>
@@ -20,8 +23,11 @@ function AppartmentPage() {
           <div className='appartment-title'>
                 <h1>{Logement.title}</h1>
 
-                <h2>Paris,île de France</h2> 
+                <h2>{Logement.location}</h2> 
                 <Tag/>
+                <div className="description-info__titletags__tags">
+                  {tagsLogement}
+                </div>
           </div>
           <div className='appartment_owner'>
             <div className="Dumas">
@@ -40,7 +46,13 @@ function AppartmentPage() {
           <div className='info'>
               <Collapse title="Description">
                   <div className='text_description'>
-                  
+                  <p>Climatisation</p>
+                  <p> Wi-fi </p>
+                  <p> Cuisine</p>
+                  <p>  Espace de travail </p>
+                  <p> Fer a repasser </p>
+                  <p> Seche-cheveux </p>
+                  <p>Cintres </p>
                     
                     </div>
               </Collapse>
