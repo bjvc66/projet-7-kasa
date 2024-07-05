@@ -5,7 +5,7 @@ import './../style/components/star.scss';
 
 function Rate(props) {
   const score = props.score;
-const notes = [1, 2, 3, 4, 5];
+  const notes = [1, 2, 3, 4, 5];
 return (
   <div className="rate-contenair">
     {notes.map((note) =>

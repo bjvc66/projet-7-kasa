@@ -43,18 +43,18 @@ object-fit: cover;
 position :relative;
 .arrowLeft,.arrowRight{
   position:absolute;
-  top:calc((50% - 400px/2));
+  top:calc((50% - 121px/2));
   cursor: pointer;
-
+z-index:1;
 }
 .arrowLeft{
   left:10px;
-  background-color: aqua;
+ 
  
 }
 .arrowRight{
   right:10px;
-background-color: aqua;
+
 }
 
 }

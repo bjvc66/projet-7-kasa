@@ -2,9 +2,7 @@
 .tag_container {
     width:115px;
   
-   
-   
-     .tag_container_button {
+    .tag_container_button {
      display: flex;
      justify-content: center;
      align-items: center;
@@ -13,6 +11,7 @@
       margin-top: 4%;
     border-radius: 5px;
      padding: 2px 10px 0 10px;
+     
   
       @media screen and (min-width:760px) {
         flex-direction: column;
@@ -20,14 +19,18 @@
         height: 25px;
         border-radius: 10px;
         font-size: 10px;
+
       }
     }
   }
   .description-info__titletags__tags{
-display: flex;
-justify-content: space-between;
+display:grid;
+grid-template-columns: 60px 60px 60px 60px 60px;
+gap:80px;
 align-items: center;
-width: 50%;
+
+
+width: 100%;
   }
 
  

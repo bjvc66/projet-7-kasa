@@ -3,9 +3,8 @@ import Banner from '../../components/banner.jsx';
 import Footer from "../../layout/footer.jsx";
 import Header from "../../layout/header.jsx";
 import BannerAbout from '../../assets/images/BannerAbout.png';
-import Chevron from '../../assets/images/Chevron.png';
 import Collapse from '../../components/collapes.jsx';
-import '../../style/components/about.scss';
+
 
 
 function About()  {
