@@ -9,14 +9,16 @@ Footer{
    
 }
 .footer__logo{
-   width: 110px; 
-   height: 35px;
+   @include flex-center;
+  
   
 }
 .footer__text-copyright{
     color:white;
     width: 513px;
     height: 46px;
+    margin-top: 15px;
     text-align: center;
     font: Monserat;
 }
+

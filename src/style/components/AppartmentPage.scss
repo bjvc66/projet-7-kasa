@@ -5,14 +5,14 @@
 }
 
 .appartmentPage{
-    width: 90%;
+    width: 100%;
     border-radius: 15px;
     margin-left: 10px;
     color:$quatriary;
     font-family: "Monserat", sans-serif;
     font-size:small;
     box-sizing: border-box;
-	  font-family: "Montserrat", sans-serif;
+	
 }
 
 h2{
@@ -57,16 +57,7 @@ p{
 
 //----------------------lesmedia queries----------------------------
 
-@include  mediamaxwidth(756px) {
-  .appartment-header{
-    @include flex-column;
-  }
- 
-  .Alexandre_Dumas{
-    background-color: aqua;
- 
-  }
-  }
+
 //--------------------------------------------------------------  
    
  
@@ -109,14 +100,27 @@ p{
     .appartmentPage{
      height: 1050px;
     }
- //-------------------------------------------------
- @include  mediaminwidth(1125px) {
+//-------------------------------media-query laptop XL-------------------------------------
+@include  mediaminwidth(1024px) {
+
+  .Alexandre_Dumas{
+    background-color:magenta;
+ 
+  }
+}
+
+ //------------------------media-query laptop-------------------------
+ @include  mediamaxwidth(1024px) {
   .info{
     
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items:baseline;
+  }
+  .Alexandre_Dumas{
+    background-color:blue;
+ 
   }
  
   .appartment-Equipements{
@@ -126,4 +130,23 @@ p{
     margin-left: 15px;
   }
  }  
+ //---------------------media-query tablette-----------------------
+ @include  mediamaxwidth(768px) {
+  .appartment-header{
+    @include flex-column;
+  }
+ 
+  .Alexandre_Dumas{
+    background-color: red;
+ 
+  }
+  }
+
+  //------------------------media-query portable------------------
+  @include  mediamaxwidth(425px) {
+
+    .Alexandre_Dumas{
+      background-color:green;
    
+    }
+  }

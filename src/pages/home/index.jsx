@@ -4,7 +4,7 @@ import Header from "../../layout/header.jsx";
 import Banner from '../../components/banner.jsx';
 import Gallery from '../../components/gallery.jsx';
 import BannerImage from '../../assets/images/BannerImage.png';
-import '../../style/components/homePage.scss';
+
 function Home()  {
     return (
       <div className="home">

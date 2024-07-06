@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { useParams, Navigate } from "react-router-dom";
+import './../style/components/AppartmentPage.scss';
 import Data from "./../data/logement.json";
 import Collapse from './../components/collapes.jsx';
 import Carrousel from './../components/carrousel.jsx';
 import Tag from './../components/tag.jsx';
 import Star from './../components/star.jsx';
 import Host from './../components/host.jsx';
-import './../style/components/AppartmentPage.scss';
+
 
 function AppartmentPage() {
 

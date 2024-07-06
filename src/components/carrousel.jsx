@@ -31,6 +31,8 @@ return (
       <img src= {rightArrow} alt=""/>
     </div>
 
+    
+
     <div className="picture">
       <img src={currentPicture} alt=""/>
     </div>
