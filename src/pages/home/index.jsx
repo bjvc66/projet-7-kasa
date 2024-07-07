@@ -3,7 +3,7 @@ import Footer from "../../layout/footer.jsx";
 import Header from "../../layout/header.jsx";
 import Banner from '../../components/banner.jsx';
 import Gallery from '../../components/gallery.jsx';
-import BannerImage from '../../assets/images/BannerImage.png';
+import BannerImage from '../../assets/BannerImage.png';
 
 function Home()  {
     return (
