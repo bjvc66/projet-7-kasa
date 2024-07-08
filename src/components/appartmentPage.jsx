@@ -64,8 +64,8 @@ function AppartmentPage() {
         </div>
       </Collapse>
     </div>
-
 </div>
+
   )}   
 export default  AppartmentPage
  

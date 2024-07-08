@@ -1,7 +1,11 @@
 @import '../../style/color.scss';
 @import '../../utils/mixins.scss';
+.info{
+ @include flex-between;
+}
 
 
+ 
 
 .image{
   width:100%;
@@ -18,17 +22,15 @@
 	
 }
 
+h1{
+  margin-bottom: 0px;
+  }
+
 h2{
  
   margin-top: 10px;
   font-size: 15px;
 }
-
-h1{
-
- margin-bottom: 0px;
-}
-
 
 
 
@@ -36,46 +38,37 @@ h1{
 @include flex-between;
 }
 
-
-
 p{
   margin-bottom: 0px;
   margin-top: 0px;
   
 }
 
-
-
 .appartment-title{
-  
+ 
   width:100%;
 }
-
-
 
 .Dumas{
   margin-top: 20px;
 }
 
-
-//----------------------lesmedia queries----------------------------
-
-
-//--------------------------------------------------------------  
-   
- 
- .Description{
+.Description{
   width: 100%;
  }
+
  .Equipement{
   width: 100%;
  }
+
  .appartment-description{
   width:100%;
  }
+
  .appartment-Equipements{
   width: 100%;
  }
+
  .appartmentPage{
   height: 1050px;
  }
@@ -86,45 +79,10 @@ p{
   
 }
 
-//----------------------------------------------------------
-   
-    .Description{
-     width: 100%;
-    }
-    .Equipement{
-     width: 100%;
-    }
-    .appartment-description{
-     width:100%;
-    }
-    .appartment-Equipements{
-     width: 100%;
-    }
-    .appartmentPage{
-     height: 1050px;
-    }
-//-------------------------------media-query laptop XL-------------------------------------
-@include  mediaminwidth(1024px) {
-
-  .Alexandre_Dumas{
-    background-color:magenta;
- 
-  }
-}
-
- //------------------------media-query laptop-------------------------
+//------------------------media-query laptop-------------------------
  @include  mediamaxwidth(1024px) {
-  .info{
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items:baseline;
-  }
-  .Alexandre_Dumas{
-    background-color:blue;
- 
-  }
+  
+
  
   .appartment-Equipements{
     margin-left: 15px;
@@ -138,18 +96,68 @@ p{
   .appartment-header{
     @include flex-column;
   }
- 
-  .Alexandre_Dumas{
-    background-color: red;
- 
+.collapse{
+  margin-left: 0px;
+}
+.appartment_owner{
+  width: 45%;
+  margin-left: 50px;
+}
+  .Dumas{
+    width: 180%;
+    margin-left: -55%;
+   
+    display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap:60%;
+  
+    
+    padding: 10px;
+  align-items: center;
+   margin-top: 20px;
+   margin-bottom: 20px;
   }
+  .star-contenair{
+    white-space: nowrap;
+    margin-left: 15px;
   }
+ //.collapse_content{
+  //width: 90%;
+   //height: 150px;
+  
+  
+   //}
+  }
+ 
+  
 
   //------------------------media-query portable------------------
   @include  mediamaxwidth(425px) {
-
-    .Alexandre_Dumas{
-      background-color:green;
    
+   
+
+      .appartment_owner{
+        width: 25%;
+      }
+.star{
+  display: flex;
+
+align-items: center;
+}
+      .info{
+        @include flex-column;
+       }
+    
+  
+    .Dumas{
+   width:100%;
+   margin-left:40px ;
+     // display: flex;
+     // flex-direction: row;
+    //  justify-content: space-between;
+    //  align-items:baseline;
     }
   }
+
+ 

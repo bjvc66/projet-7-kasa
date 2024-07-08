@@ -3,11 +3,11 @@ import emptyStar from "./../assets/images/startRempli.png";
 import fullStar from "./../assets/images/startVide.png";
 import './../style/components/star.scss';
 
-function Rate(props) {
+function Star(props) {
   const score = props.score;
   const notes = [1, 2, 3, 4, 5];
 return (
-  <div className="rate-contenair">
+  <div className="star-contenair">
     {notes.map((note) =>
       score >= note ? (
         <img
@@ -29,4 +29,4 @@ return (
 );
 }
 
-export default Rate;
+export default Star;

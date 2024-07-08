@@ -13,6 +13,7 @@ function Collapse({title,children}) {
     return (
 
       <div className="collapse">
+       
         <div className='collapse_title'>
           <p>{title}</p>
           <p onClick={Display}>
@@ -28,6 +29,7 @@ function Collapse({title,children}) {
           {isOpen && <p>{children}</p>}
         </div>
       </div>
+   
     );
   }
 export default Collapse;
