@@ -31,7 +31,10 @@ return (
       <img src= {rightArrow} alt=""/>
     </div>
 
-    
+    <div className="counter">
+{index+1}/{pictures.length}
+
+    </div>
 
     <div className="picture">
       <img src={currentPicture} alt=""/>

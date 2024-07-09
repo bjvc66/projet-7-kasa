@@ -9,10 +9,10 @@
   &_txt {
    
       position: absolute;
-     
+    
       top: 40%;
       left: 33%;
-      font-size: 33px;
+      font-size: 35px;
       color: white;
       
       
@@ -23,35 +23,40 @@ img{
  
 }
 
+
 @include  mediaminwidth(1024px) {
 
   .banner_txt{
-@include flex-center;
+   
+   left:33.5%;
   }
 
 }
   @include  mediamaxwidth(1024px) {
 
     .banner_txt{
-      @include flex-center;
+    
+     
+     font-size: 30px;
         }
 
    } 
   @include  mediamaxwidth(768px) {
 
     .banner_txt{
-      @include flex-center;
-      font-size:23px ;
+      
+   
+   left:25%;
+    font-size: 25px;
         }
 
   }
     @include  mediamaxwidth(425px) {
        
       .banner_txt{
-     
-        font-size:20px ;
-       right: 70px;
-     bottom:30px;
+    
+    
+     font-size: 18px;
        
           }
 
